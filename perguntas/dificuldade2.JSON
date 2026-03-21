@@ -1,0 +1,92 @@
+[
+  {
+    "pergunta": "O que é uma variável?",
+    "alternativas": [
+      { "letra": "A", "texto": "Um tipo de erro" },
+      { "letra": "B", "texto": "Um espaço para armazenar dados" },
+      { "letra": "C", "texto": "Um programa" },
+      { "letra": "D", "texto": "Um loop" }
+    ]
+  },
+  {
+    "pergunta": "O que o comando print faz?",
+    "alternativas": [
+      { "letra": "A", "texto": "Repete código" },
+      { "letra": "B", "texto": "Mostra algo na tela" },
+      { "letra": "C", "texto": "Cria variável" },
+      { "letra": "D", "texto": "Apaga dados" }
+    ]
+  },
+  {
+    "pergunta": "Qual valor é booleano?",
+    "alternativas": [
+      { "letra": "A", "texto": "10" },
+      { "letra": "B", "texto": "true" },
+      { "letra": "C", "texto": "\"texto\"" },
+      { "letra": "D", "texto": "3.5" }
+    ]
+  },
+  {
+    "pergunta": "O que significa ==?",
+    "alternativas": [
+      { "letra": "A", "texto": "Atribuir" },
+      { "letra": "B", "texto": "Comparar" },
+      { "letra": "C", "texto": "Somar" },
+      { "letra": "D", "texto": "Dividir" }
+    ]
+  },
+  {
+    "pergunta": "Qual dessas é uma linguagem de programação?",
+    "alternativas": [
+      { "letra": "A", "texto": "HTML" },
+      { "letra": "B", "texto": "Cobol" },
+      { "letra": "C", "texto": "Vscode" },
+      { "letra": "D", "texto": "Windows" }
+    ]
+  },
+  {
+    "pergunta": "Qual desses é um tipo de dado?",
+    "alternativas": [
+      { "letra": "A", "texto": "if" },
+      { "letra": "B", "texto": "int" },
+      { "letra": "C", "texto": "for" },
+      { "letra": "D", "texto": "while" }
+    ]
+  },
+  {
+    "pergunta": "Qual dessas NÃO é uma linguagem de programação?",
+    "alternativas": [
+      { "letra": "A", "texto": "Cobol" },
+      { "letra": "B", "texto": "HTML" },
+      { "letra": "C", "texto": "Kotlin" },
+      { "letra": "D", "texto": "Python" }
+    ]
+  },
+  {
+    "pergunta": "Um algoritmo verifica se um número está entre 10 e 20 (inclusive). Qual número será considerado válido?",
+    "alternativas": [
+      { "letra": "A", "texto": "9" },
+      { "letra": "B", "texto": "10" },
+      { "letra": "C", "texto": "21" },
+      { "letra": "D", "texto": "25" }
+    ]
+  },
+  {
+    "pergunta": "print(\"%d\", 2+2); Qual será a saída?",
+    "alternativas": [
+      { "letra": "A", "texto": "2" },
+      { "letra": "B", "texto": "4" },
+      { "letra": "C", "texto": "22" },
+      { "letra": "D", "texto": "erro" }
+    ]
+  },
+  {
+    "pergunta": "if (Numero > 100) { printf(\"Grande\"); } else { printf(\"Pequeno\"); } O que será exibido se o número for 100?",
+    "alternativas": [
+      { "letra": "A", "texto": "Grande" },
+      { "letra": "B", "texto": "Pequeno" },
+      { "letra": "C", "texto": "Nada" },
+      { "letra": "D", "texto": "Erro" }
+    ]
+  }
+]

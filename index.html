@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/index.css">
+    <title>Debugando</title>
+</head>
+<body>
+    <div class="container">
+        <div class="mensagem">
+            <h1>VOCÊ SÓ PODE JOGAR ESSE JOGO EM UM COMPUTADOR!</h1>
+            <p>Monitores com 1280px</p>
+        </div>
+        <div class="content">
+            <div class="tabuleiro">
+                <h1 class="vez" id="vez">Jogador 
+                    <img src="./images/JA.png" alt="" id="vezImg">
+                </h1>
+                <div class="casa" id="a01" data-valor-da-casa="1">
+                    <!-- Peões -->
+                    <div class="peao" id="JA" data-casa-atual="1" data-jogador="1"></div>
+                    <div class="peao" id="JB" data-casa-atual="1" data-jogador="2"></div>
+                    <div class="peao" id="JC" data-casa-atual="1" data-jogador="3"></div>
+                </div>
+
+                <div class="casa" id="a02" data-valor-da-casa="2">02</div>
+                <div class="casa" id="a03" data-valor-da-casa="3">03</div>
+                <div class="casa" id="a04" data-valor-da-casa="4">04</div>
+                <div class="casa" id="a05" data-valor-da-casa="5">05</div>
+                <div class="casa" id="a06" data-valor-da-casa="6">06</div>
+                <div class="casa" id="a07" data-valor-da-casa="7">07</div>
+                <div class="casa" id="a08" data-valor-da-casa="8">08</div>
+                <div class="casa" id="a09" data-valor-da-casa="9">09</div>
+                <div class="casa" id="a10" data-valor-da-casa="10">10</div>
+
+                <div class="casa" id="a11" data-valor-da-casa="11">11</div>
+                <div class="casa" id="a12" data-valor-da-casa="12">12</div>
+                <div class="casa" id="a13" data-valor-da-casa="13">13</div>
+                <div class="casa" id="a14" data-valor-da-casa="14">14</div>
+                <div class="casa" id="a15" data-valor-da-casa="15">15</div>
+                <div class="casa" id="a16" data-valor-da-casa="16">16</div>
+                <div class="casa" id="a17" data-valor-da-casa="17">17</div>
+                <div class="casa" id="a18" data-valor-da-casa="18">18</div>
+                <div class="casa" id="a19" data-valor-da-casa="19">19</div>
+                <div class="casa" id="a20" data-valor-da-casa="20">20</div>
+
+                <div class="casa" id="a21" data-valor-da-casa="21">21</div>
+                <div class="casa" id="a22" data-valor-da-casa="22">22</div>
+                <div class="casa" id="a23" data-valor-da-casa="23">23</div>
+                <div class="casa" id="a24" data-valor-da-casa="24">24</div>
+                <div class="casa" id="a25" data-valor-da-casa="25">25</div>
+                <div class="casa" id="a26" data-valor-da-casa="26">26</div>
+                <div class="casa" id="a27" data-valor-da-casa="27">27</div>
+                <div class="casa" id="a28" data-valor-da-casa="28">28</div>
+                <div class="casa" id="a29" data-valor-da-casa="29">29</div>
+                <div class="casa" id="a30" data-valor-da-casa="30">30</div>
+
+                <div class="casa" id="a31" data-valor-da-casa="31">31</div>
+                <div class="casa" id="a32" data-valor-da-casa="32">32</div>
+                <div class="casa" id="a33" data-valor-da-casa="33">33</div>
+                <div class="casa" id="a34" data-valor-da-casa="34">34</div>
+                <div class="casa" id="a35" data-valor-da-casa="35">35</div>
+                <div class="casa" id="a36" data-valor-da-casa="36">36</div>
+                <div class="casa" id="a37" data-valor-da-casa="37">37</div>
+                <div class="casa" id="a38" data-valor-da-casa="38">38</div>
+                <div class="casa" id="a39" data-valor-da-casa="39">39</div>
+                <div class="casa" id="a40" data-valor-da-casa="40">40</div>
+
+                <div class="casa" id="a41" data-valor-da-casa="41">41</div>
+                <div class="casa" id="a42" data-valor-da-casa="42">42</div>
+                <div class="casa" id="a43" data-valor-da-casa="43">43</div>
+                <div class="casa" id="a44" data-valor-da-casa="44">44</div>
+                <div class="casa" id="a45" data-valor-da-casa="45">45</div>
+                <div class="casa" id="a46" data-valor-da-casa="46">46</div>
+                <div class="casa" id="a47" data-valor-da-casa="47">47</div>
+                <div class="casa" id="a48" data-valor-da-casa="48">48</div>
+                <div class="casa" id="a49" data-valor-da-casa="49">49</div>
+                <div class="casa" id="a50" data-valor-da-casa="50">50</div>
+
+                <div class="casa" id="a51" data-valor-da-casa="51">51</div>
+                <div class="casa" id="a52" data-valor-da-casa="52">52</div>
+                <div class="casa" id="a53" data-valor-da-casa="53">53</div>
+                <div class="casa" id="a54" data-valor-da-casa="54">54</div>
+                <div class="casa" id="a55" data-valor-da-casa="55">55</div>
+                <div class="casa" id="a56" data-valor-da-casa="56">56</div>
+                <div class="casa" id="a57" data-valor-da-casa="57">57</div>
+                <div class="casa" id="a58" data-valor-da-casa="58">58</div>
+                <div class="casa" id="a59" data-valor-da-casa="59">59</div>
+                <div class="casa" id="a60" data-valor-da-casa="60">60</div>
+
+                <div class="casa" id="a61" data-valor-da-casa="61">61</div>
+                <div class="casa" id="a62" data-valor-da-casa="62">62</div>
+                <div class="casa" id="a63" data-valor-da-casa="63">63</div>
+                <div class="casa" id="a64" data-valor-da-casa="64">64</div>
+
+                <!-- Caminho alternativo -->
+                <div class="casa" id="ac01">A01</div>
+                <div class="casa" id="ac02">A02</div>
+                <div class="casa" id="ac03">A03</div>
+                <div class="casa" id="ac04">A04</div>
+                <div class="casa" id="ac05">A05</div>
+                <div class="casa" id="ac06">A06</div>
+                <div class="casa" id="ac07">A07</div>
+                <div class="casa" id="ac08">A08</div>
+                <div class="casa" id="ac09">A09</div>
+                <div class="casa" id="ac10">A10</div>
+                
+                <!-- Rolagem de dado -->
+                <div class="dado" id="dado">
+                    <h1 id="valorDoDado">1</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script/index.js"></script>
+</body>
+</html>
