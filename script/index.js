@@ -19,8 +19,8 @@ let verificadorDePC = 1;
 let rodadas = 0;
 
 /* Carregando as perguntas */
-document.addEventListener("DOMContentLoaded", () => {
-    carregarPerguntas();
+document.addEventListener("DOMContentLoaded", async () => {
+    await carregarPerguntas();
     carregarVida(vidaDoMonstro);
     for(let i=0; i<3; i++){
         pontuaJogador(0, i);
