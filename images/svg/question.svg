@@ -1,0 +1,44 @@
+<svg width="1000" height="600" viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .question {
+        fill: white; /* cor branca */
+        stroke: black; /* contorno escuro */
+        stroke-width: 1px;
+        opacity: 0.5;
+        font-size: 40px; /* maior tamanho */
+        font-family: Arial, sans-serif;
+      }
+      @keyframes fall {
+        0% { transform: translateY(-50px); }
+        100% { transform: translateY(650px); }
+      }
+    </style>
+  </defs>
+
+  <g>
+    <!-- Exemplo de interrogações animadas -->
+    <text class="question" x="10" y="-50" style="animation: fall 5s linear infinite; animation-delay: 0s;">?</text>
+    <text class="question" x="60" y="-50" style="animation: fall 6s linear infinite; animation-delay: 1s;">?</text>
+    <text class="question" x="110" y="-50" style="animation: fall 5.5s linear infinite; animation-delay: 0.5s;">?</text>
+    <text class="question" x="160" y="-50" style="animation: fall 6.2s linear infinite; animation-delay: 2s;">?</text>
+    <text class="question" x="210" y="-50" style="animation: fall 4.8s linear infinite; animation-delay: 1.2s;">?</text>
+    <text class="question" x="260" y="-50" style="animation: fall 5.7s linear infinite; animation-delay: 0.8s;">?</text>
+    <text class="question" x="310" y="-50" style="animation: fall 6.5s linear infinite; animation-delay: 2.5s;">?</text>
+    <text class="question" x="360" y="-50" style="animation: fall 5.1s linear infinite; animation-delay: 1.5s;">?</text>
+    <text class="question" x="410" y="-50" style="animation: fall 5.9s linear infinite; animation-delay: 0.3s;">?</text>
+    <text class="question" x="460" y="-50" style="animation: fall 6.1s linear infinite; animation-delay: 1.7s;">?</text>
+    <text class="question" x="510" y="-50" style="animation: fall 4.9s linear infinite; animation-delay: 2.2s;">?</text>
+    <text class="question" x="560" y="-50" style="animation: fall 5.3s linear infinite; animation-delay: 3.1s;">?</text>
+    <text class="question" x="610" y="-50" style="animation: fall 6.4s linear infinite; animation-delay: 0.9s;">?</text>
+    <text class="question" x="660" y="-50" style="animation: fall 5.6s linear infinite; animation-delay: 2.6s;">?</text>
+    <text class="question" x="710" y="-50" style="animation: fall 5.2s linear infinite; animation-delay: 1.1s;">?</text>
+    <text class="question" x="760" y="-50" style="animation: fall 6.0s linear infinite; animation-delay: 3.5s;">?</text>
+    <text class="question" x="810" y="-50" style="animation: fall 4.7s linear infinite; animation-delay: 0.7s;">?</text>
+    <text class="question" x="860" y="-50" style="animation: fall 5.8s linear infinite; animation-delay: 2.0s;">?</text>
+    <text class="question" x="910" y="-50" style="animation: fall 6.3s linear infinite; animation-delay: 1.3s;">?</text>
+    <text class="question" x="960" y="-50" style="animation: fall 5.4s linear infinite; animation-delay: 0.4s;">?</text>
+
+    <!-- Você pode duplicar e mudar X e animation-delay até ter 100+ interrogações -->
+  </g>
+</svg>

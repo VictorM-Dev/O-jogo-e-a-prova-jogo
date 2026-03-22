@@ -1,92 +1,110 @@
 [
   {
-    "pergunta": "O que é uma variável?",
+    "pergunta": "O que será impresso?\nint y = 1\nint x = 10;\nif (y==1) {\n  int x = 5;\n  print(\"%d \", x);\n}\nprint(\"%d\", x);",
     "alternativas": [
-      { "letra": "A", "texto": "Um tipo de erro" },
-      { "letra": "B", "texto": "Um espaço para armazenar dados" },
-      { "letra": "C", "texto": "Um programa" },
-      { "letra": "D", "texto": "Um loop" }
+      { "letra": "A", "texto": "10 10" },
+      { "letra": "B", "texto": "5 10" },
+      { "letra": "C", "texto": "5 5" },
+      { "letra": "D", "texto": "10 5" }
     ]
   },
   {
-    "pergunta": "O que o comando print faz?",
+    "pergunta": "Dado o vetor:\nint v[5] = {10, 20, 30, 40, 50};\nO que acontece ao executar: v[1] = v[4] / 2;",
     "alternativas": [
-      { "letra": "A", "texto": "Repete código" },
-      { "letra": "B", "texto": "Mostra algo na tela" },
-      { "letra": "C", "texto": "Cria variável" },
-      { "letra": "D", "texto": "Apaga dados" }
+      { "letra": "A", "texto": "Erro de compilação" },
+      { "letra": "B", "texto": "v[1] passa a valer 25" },
+      { "letra": "C", "texto": "O vetor inteiro passa a ser dividido por 25" },
+      { "letra": "D", "texto": "v[1] passa a valer 20" }
     ]
   },
   {
-    "pergunta": "Qual valor é booleano?",
+    "pergunta": "Qual erro de lógica?\nint v[4] = {1, 2, 3, 4};\nprint(\"%d\", v[1] * v[3] + v[4]);",
     "alternativas": [
-      { "letra": "A", "texto": "10" },
-      { "letra": "B", "texto": "true" },
-      { "letra": "C", "texto": "\"texto\"" },
-      { "letra": "D", "texto": "3.5" }
+      { "letra": "A", "texto": "O vetor foi declarado com tamanho incorreto" },
+      { "letra": "B", "texto": "O índice v[4] está fora dos limites do vetor" },
+      { "letra": "C", "texto": "O operador * não pode ser usado com vetores" },
+      { "letra": "D", "texto": "O printf está com formatação incorreta" }
     ]
   },
   {
-    "pergunta": "O que significa ==?",
+    "pergunta": "Qual o resultado final?\nint soma = 0;\nfor (int i = 1; i <= 4; i++) {\n  soma += i;\n  if (i % 2 == 0) {\n    soma -= 1;\n  }\n}",
     "alternativas": [
-      { "letra": "A", "texto": "Atribuir" },
-      { "letra": "B", "texto": "Comparar" },
-      { "letra": "C", "texto": "Somar" },
-      { "letra": "D", "texto": "Dividir" }
+      { "letra": "A", "texto": "7" },
+      { "letra": "B", "texto": "8" },
+      { "letra": "C", "texto": "9" },
+      { "letra": "D", "texto": "10" }
     ]
   },
   {
-    "pergunta": "Qual dessas é uma linguagem de programação?",
+    "pergunta": "Um algoritmo usa a lógica:\nif (A) → ação 1\nelse if (B) → ação 2\nelse → ação 3\nSe A e B forem verdadeiros ao mesmo tempo, o que acontece?",
     "alternativas": [
-      { "letra": "A", "texto": "HTML" },
-      { "letra": "B", "texto": "Cobol" },
-      { "letra": "C", "texto": "Vscode" },
-      { "letra": "D", "texto": "Windows" }
+      { "letra": "A", "texto": "Executa 1 e 2" },
+      { "letra": "B", "texto": "Executa apenas 1" },
+      { "letra": "C", "texto": "Executa apenas 2" },
+      { "letra": "D", "texto": "Executa 3" }
     ]
   },
   {
-    "pergunta": "Qual desses é um tipo de dado?",
+    "pergunta": "Um algoritmo verifica:\nif (numero > 0) → entra no bloco\nDentro do IF: if (numero < 10) → ação A\nFora dos IFs existe uma ação B independente\nPara numero = 5, o que acontece?",
     "alternativas": [
-      { "letra": "A", "texto": "if" },
-      { "letra": "B", "texto": "int" },
-      { "letra": "C", "texto": "for" },
-      { "letra": "D", "texto": "while" }
+      { "letra": "A", "texto": "Só A" },
+      { "letra": "B", "texto": "A e B" },
+      { "letra": "C", "texto": "Só B" },
+      { "letra": "D", "texto": "Nada" }
     ]
   },
   {
-    "pergunta": "Qual dessas NÃO é uma linguagem de programação?",
+    "pergunta": "Um algoritmo usa uma variável dentro de um bloco condicional e tenta acessá-la fora dele. Qual o comportamento esperado?",
     "alternativas": [
-      { "letra": "A", "texto": "Cobol" },
-      { "letra": "B", "texto": "HTML" },
-      { "letra": "C", "texto": "Kotlin" },
-      { "letra": "D", "texto": "Python" }
+      { "letra": "A", "texto": "Funciona normalmente" },
+      { "letra": "B", "texto": "Erro de escopo" },
+      { "letra": "C", "texto": "Valor padrão" },
+      { "letra": "D", "texto": "Ignora" }
     ]
   },
   {
-    "pergunta": "Um algoritmo verifica se um número está entre 10 e 20 (inclusive). Qual número será considerado válido?",
+    "pergunta": "Qual o resultado esperado?\nint v[5] = {1, 2, 3, 4, 5};\nsoma = 0;\nfor(int i = 0; i < 5; i++) {\n  if(v[i] % 2 != 0)\n    soma += v[i];\n}",
     "alternativas": [
-      { "letra": "A", "texto": "9" },
-      { "letra": "B", "texto": "10" },
-      { "letra": "C", "texto": "21" },
-      { "letra": "D", "texto": "25" }
+      { "letra": "A", "texto": "6" },
+      { "letra": "B", "texto": "9" },
+      { "letra": "C", "texto": "15" },
+      { "letra": "D", "texto": "3" }
     ]
   },
   {
-    "pergunta": "print(\"%d\", 2+2); Qual será a saída?",
+    "pergunta": "O que define um vetor esparso?",
+    "alternativas": [
+      { "letra": "A", "texto": "Possui apenas números pares" },
+      { "letra": "B", "texto": "Possui muitos valores zero e poucos valores não zero" },
+      { "letra": "C", "texto": "É sempre ordenado" },
+      { "letra": "D", "texto": "Só pode ter tamanho fixo" }
+    ]
+  },
+  {
+    "pergunta": "O que será impresso?\nint vetor[3] = {1,2,3};\nprint(\"%d\", vetor[1]+1);",
     "alternativas": [
       { "letra": "A", "texto": "2" },
-      { "letra": "B", "texto": "4" },
-      { "letra": "C", "texto": "22" },
-      { "letra": "D", "texto": "erro" }
+      { "letra": "B", "texto": "3" },
+      { "letra": "C", "texto": "4" },
+      { "letra": "D", "texto": "1" }
     ]
   },
   {
-    "pergunta": "if (Numero > 100) { printf(\"Grande\"); } else { printf(\"Pequeno\"); } O que será exibido se o número for 100?",
+    "pergunta": "Um algoritmo possui um laço com condição de parada baseada em uma variável. Dentro do laço, existe um caminho lógico que impede a atualização dessa variável. O que pode acontecer?",
     "alternativas": [
-      { "letra": "A", "texto": "Grande" },
-      { "letra": "B", "texto": "Pequeno" },
-      { "letra": "C", "texto": "Nada" },
-      { "letra": "D", "texto": "Erro" }
+      { "letra": "A", "texto": "Execução normal" },
+      { "letra": "B", "texto": "Loop infinito" },
+      { "letra": "C", "texto": "Executa uma vez" },
+      { "letra": "D", "texto": "Erro obrigatório" }
+    ]
+  },
+  {
+    "pergunta": "Um algoritmo executa:\nfor(int i = 1; i<=3; i++){\n  for(int j = 1; j<=i; j++){\n    print(\"*\");\n  }\n}\nQuantas vezes a ação interna ocorre?",
+    "alternativas": [
+      { "letra": "A", "texto": "3" },
+      { "letra": "B", "texto": "6" },
+      { "letra": "C", "texto": "5" },
+      { "letra": "D", "texto": "4" }
     ]
   }
 ]

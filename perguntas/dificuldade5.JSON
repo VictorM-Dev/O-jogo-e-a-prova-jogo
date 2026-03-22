@@ -1,92 +1,101 @@
 [
   {
-    "pergunta": "O que é uma variável?",
+    "pergunta": "Em uma matriz mat[3][3], como acessamos o elemento central?",
     "alternativas": [
-      { "letra": "A", "texto": "Um tipo de erro" },
-      { "letra": "B", "texto": "Um espaço para armazenar dados" },
-      { "letra": "C", "texto": "Um programa" },
-      { "letra": "D", "texto": "Um loop" }
+      { "letra": "A", "texto": "mat[3][3]" },
+      { "letra": "B", "texto": "mat[1][1]" },
+      { "letra": "C", "texto": "mat[2][2]" },
+      { "letra": "D", "texto": "mat[1][2]" }
     ]
   },
   {
-    "pergunta": "O que o comando print faz?",
+    "pergunta": "Qual a saída deste código?\nint v[3] = {2, 4, 6};\nprintf(\"%d\", v[v[0]]);",
     "alternativas": [
-      { "letra": "A", "texto": "Repete código" },
-      { "letra": "B", "texto": "Mostra algo na tela" },
-      { "letra": "C", "texto": "Cria variável" },
-      { "letra": "D", "texto": "Apaga dados" }
+      { "letra": "A", "texto": "Um vetor não pode ser índice de si mesmo" },
+      { "letra": "B", "texto": "6" },
+      { "letra": "C", "texto": "4" },
+      { "letra": "D", "texto": "2" }
     ]
   },
   {
-    "pergunta": "Qual valor é booleano?",
+    "pergunta": "O que o seguinte código calcula?\nint res = v[0];\nfor(int i = 1; i < 5; i++) {\n  if(v[i] < res) res = v[i];\n}",
     "alternativas": [
-      { "letra": "A", "texto": "10" },
-      { "letra": "B", "texto": "true" },
-      { "letra": "C", "texto": "\"texto\"" },
-      { "letra": "D", "texto": "3.5" }
+      { "letra": "A", "texto": "A soma dos valores" },
+      { "letra": "B", "texto": "O menor valor do vetor" },
+      { "letra": "C", "texto": "O maior valor do vetor" },
+      { "letra": "D", "texto": "A posição (índice) do menor valor" }
     ]
   },
   {
-    "pergunta": "O que significa ==?",
+    "pergunta": "O que o código abaixo imprime?\nint x = 5;\nif (x++ > 5 && ++x > 6) {\n  printf(\"A\");\n} else {\n  printf(\"%d\", x);\n}",
     "alternativas": [
-      { "letra": "A", "texto": "Atribuir" },
-      { "letra": "B", "texto": "Comparar" },
-      { "letra": "C", "texto": "Somar" },
-      { "letra": "D", "texto": "Dividir" }
+      { "letra": "A", "texto": "5" },
+      { "letra": "B", "texto": "6" },
+      { "letra": "C", "texto": "A" },
+      { "letra": "D", "texto": "7" }
     ]
   },
   {
-    "pergunta": "Qual dessas é uma linguagem de programação?",
+    "pergunta": "Qual problema pode ocorrer com recursão profunda sem otimização?",
     "alternativas": [
-      { "letra": "A", "texto": "HTML" },
-      { "letra": "B", "texto": "Cobol" },
-      { "letra": "C", "texto": "Vscode" },
-      { "letra": "D", "texto": "Windows" }
+      { "letra": "A", "texto": "Deadlock" },
+      { "letra": "B", "texto": "Stack Overflow" },
+      { "letra": "C", "texto": "Memory Leak" },
+      { "letra": "D", "texto": "Race Condition" }
     ]
   },
   {
-    "pergunta": "Qual desses é um tipo de dado?",
+    "pergunta": "Qual característica define uma linguagem como “fortemente tipada”?",
     "alternativas": [
-      { "letra": "A", "texto": "if" },
-      { "letra": "B", "texto": "int" },
-      { "letra": "C", "texto": "for" },
-      { "letra": "D", "texto": "while" }
+      { "letra": "A", "texto": "Tipos são verificados em tempo de compilação" },
+      { "letra": "B", "texto": "Não permite conversões implícitas perigosas" },
+      { "letra": "C", "texto": "Possui orientação a objetos" },
+      { "letra": "D", "texto": "É compilada" }
     ]
   },
   {
-    "pergunta": "Qual dessas NÃO é uma linguagem de programação?",
+    "pergunta": "Ao passar um vetor para uma função em C, como: void func(int v[]), o que acontece?",
     "alternativas": [
-      { "letra": "A", "texto": "Cobol" },
-      { "letra": "B", "texto": "HTML" },
-      { "letra": "C", "texto": "Kotlin" },
-      { "letra": "D", "texto": "Python" }
+      { "letra": "A", "texto": "O programa trava porque funções não aceitam vetores" },
+      { "letra": "B", "texto": "A função recebe o endereço do primeiro elemento, permitindo alterar o vetor original" },
+      { "letra": "C", "texto": "Uma cópia completa do vetor é criada na memória para a função" },
+      { "letra": "D", "texto": "A função só pode ler os valores, mas não alterá-los" }
     ]
   },
   {
-    "pergunta": "Um algoritmo verifica se um número está entre 10 e 20 (inclusive). Qual número será considerado válido?",
+    "pergunta": "O que acontece quando ocorre um estouro de inteiro (integer overflow)?",
     "alternativas": [
-      { "letra": "A", "texto": "9" },
-      { "letra": "B", "texto": "10" },
-      { "letra": "C", "texto": "21" },
-      { "letra": "D", "texto": "25" }
+      { "letra": "A", "texto": "O valor permanece fixo no limite máximo do tipo" },
+      { "letra": "B", "texto": "O valor ultrapassa o limite máximo e retorna ao valor mínimo (comportamento cíclico)" },
+      { "letra": "C", "texto": "O sistema interrompe a execução por segurança" },
+      { "letra": "D", "texto": "A variável é automaticamente convertida para um tipo maior" }
     ]
   },
   {
-    "pergunta": "print(\"%d\", 2+2); Qual será a saída?",
+    "pergunta": "Em uma função que recebe um vetor 'int v[]', o que acontece se alterarmos 'v[0] = 99;' dentro da função?",
     "alternativas": [
-      { "letra": "A", "texto": "2" },
-      { "letra": "B", "texto": "4" },
-      { "letra": "C", "texto": "22" },
-      { "letra": "D", "texto": "erro" }
+      { "letra": "A", "texto": "O programa trava ao tentar acessar a memória externa" },
+      { "letra": "B", "texto": "O valor de v[0] no vetor original fora da função também será 99" },
+      { "letra": "C", "texto": "A alteração só existe dentro da função" },
+      { "letra": "D", "texto": "O compilador gera erro, pois os vetores são constantes em funções" }
     ]
   },
   {
-    "pergunta": "if (Numero > 100) { printf(\"Grande\"); } else { printf(\"Pequeno\"); } O que será exibido se o número for 100?",
+    "pergunta": "Dada a matriz int mat[2][3], qual a forma correta de percorrer todos os elementos para zerá-los?",
     "alternativas": [
-      { "letra": "A", "texto": "Grande" },
-      { "letra": "B", "texto": "Pequeno" },
-      { "letra": "C", "texto": "Nada" },
-      { "letra": "D", "texto": "Erro" }
+      { "letra": "A", "texto": "mat[2][3] = {0};" },
+      { "letra": "B", "texto": "for(i=0; i<2; i++) for(j=0; j<3; j++) mat[i][j] = 0;" },
+      { "letra": "C", "texto": "for(i=0; i<3; i++) for(j=0; j<2; j++) mat[i][j] = 0;" },
+      { "letra": "D", "texto": "for(i=0; i<6; i++) mat[i] = 0;" }
+    ]
+  },
+  {
+    "pergunta": "Uma API retorna um JSON que você mapeia para um vetor: int data[3] = {10, 20, 30}; Qual o valor de data[data[0]/10]?",
+    "alternativas": [
+      { "letra": "A", "texto": "Erro de índice fora do vetor" },
+      { "letra": "B", "texto": "20" },
+      { "letra": "C", "texto": "30" },
+      { "letra": "D", "texto": "10" }
     ]
   }
 ]

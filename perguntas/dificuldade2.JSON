@@ -1,92 +1,92 @@
 [
   {
-    "pergunta": "O que é uma variável?",
+    "pergunta": "Se o número inicial for 7, qual será o resultado final?\nif (numero % 2 == 0) {\n  numero += 10;\n} else {\n  numero += 5;\n}\nprint(\"%d\", numero);",
     "alternativas": [
-      { "letra": "A", "texto": "Um tipo de erro" },
-      { "letra": "B", "texto": "Um espaço para armazenar dados" },
-      { "letra": "C", "texto": "Um programa" },
-      { "letra": "D", "texto": "Um loop" }
+      { "letra": "A", "texto": "5" },
+      { "letra": "B", "texto": "12" },
+      { "letra": "C", "texto": "17" },
+      { "letra": "D", "texto": "10" }
     ]
   },
   {
-    "pergunta": "O que o comando print faz?",
-    "alternativas": [
-      { "letra": "A", "texto": "Repete código" },
-      { "letra": "B", "texto": "Mostra algo na tela" },
-      { "letra": "C", "texto": "Cria variável" },
-      { "letra": "D", "texto": "Apaga dados" }
-    ]
-  },
-  {
-    "pergunta": "Qual valor é booleano?",
+    "pergunta": "Qual será a saída do código?\nint x = 2;\nint y = 3;\nprint(\"%d\", x + y * 2);",
     "alternativas": [
       { "letra": "A", "texto": "10" },
-      { "letra": "B", "texto": "true" },
-      { "letra": "C", "texto": "\"texto\"" },
-      { "letra": "D", "texto": "3.5" }
+      { "letra": "B", "texto": "8" },
+      { "letra": "C", "texto": "7" },
+      { "letra": "D", "texto": "12" }
     ]
   },
   {
-    "pergunta": "O que significa ==?",
+    "pergunta": "Qual será a saída do código?\nint x = 5;\nif (x > 3 && x < 10){\n  print(\"OK\");\n}else{\n  print(\"ERRO\");\n}",
     "alternativas": [
-      { "letra": "A", "texto": "Atribuir" },
-      { "letra": "B", "texto": "Comparar" },
-      { "letra": "C", "texto": "Somar" },
-      { "letra": "D", "texto": "Dividir" }
+      { "letra": "A", "texto": "ERRO" },
+      { "letra": "B", "texto": "OK" },
+      { "letra": "C", "texto": "5" },
+      { "letra": "D", "texto": "Nada" }
     ]
   },
   {
-    "pergunta": "Qual dessas é uma linguagem de programação?",
+    "pergunta": "Dado um número inteiro, considere a expressão: numero % 2 == 0. Essa condição indica que o número:",
     "alternativas": [
-      { "letra": "A", "texto": "HTML" },
-      { "letra": "B", "texto": "Cobol" },
-      { "letra": "C", "texto": "Vscode" },
-      { "letra": "D", "texto": "Windows" }
+      { "letra": "A", "texto": "possui resto igual a 1 na divisão por 2" },
+      { "letra": "B", "texto": "é divisível por 2 sem deixar resto" },
+      { "letra": "C", "texto": "é um numero inexistente" },
+      { "letra": "D", "texto": "é um numero impar" }
     ]
   },
   {
-    "pergunta": "Qual desses é um tipo de dado?",
+    "pergunta": "O que faz um if?",
     "alternativas": [
-      { "letra": "A", "texto": "if" },
-      { "letra": "B", "texto": "int" },
-      { "letra": "C", "texto": "for" },
-      { "letra": "D", "texto": "while" }
+      { "letra": "A", "texto": "Repete código" },
+      { "letra": "B", "texto": "Toma decisão" },
+      { "letra": "C", "texto": "Soma valores" },
+      { "letra": "D", "texto": "Imprime" }
     ]
   },
   {
-    "pergunta": "Qual dessas NÃO é uma linguagem de programação?",
+    "pergunta": "O que é string?",
     "alternativas": [
-      { "letra": "A", "texto": "Cobol" },
-      { "letra": "B", "texto": "HTML" },
-      { "letra": "C", "texto": "Kotlin" },
-      { "letra": "D", "texto": "Python" }
+      { "letra": "A", "texto": "Número" },
+      { "letra": "B", "texto": "Conjunto de caracteres" },
+      { "letra": "C", "texto": "Booleano" },
+      { "letra": "D", "texto": "Texto" }
     ]
   },
   {
-    "pergunta": "Um algoritmo verifica se um número está entre 10 e 20 (inclusive). Qual número será considerado válido?",
+    "pergunta": "Identifique o erro de comparação:\nint x = 10;\nif (x = 10) { }",
     "alternativas": [
-      { "letra": "A", "texto": "9" },
-      { "letra": "B", "texto": "10" },
-      { "letra": "C", "texto": "21" },
-      { "letra": "D", "texto": "25" }
+      { "letra": "A", "texto": "Falta ;" },
+      { "letra": "B", "texto": "Uso incorreto de = no if" },
+      { "letra": "C", "texto": "x não é um nome válido de variável" },
+      { "letra": "D", "texto": "Não há erro" }
     ]
   },
   {
-    "pergunta": "print(\"%d\", 2+2); Qual será a saída?",
+    "pergunta": "O que é um loop?",
     "alternativas": [
-      { "letra": "A", "texto": "2" },
-      { "letra": "B", "texto": "4" },
-      { "letra": "C", "texto": "22" },
-      { "letra": "D", "texto": "erro" }
+      { "letra": "A", "texto": "Erro" },
+      { "letra": "B", "texto": "Repetição" },
+      { "letra": "C", "texto": "Variável" },
+      { "letra": "D", "texto": "Função" }
     ]
   },
   {
-    "pergunta": "if (Numero > 100) { printf(\"Grande\"); } else { printf(\"Pequeno\"); } O que será exibido se o número for 100?",
+    "pergunta": "Qual símbolo é o símbolo “diferente”?",
     "alternativas": [
-      { "letra": "A", "texto": "Grande" },
-      { "letra": "B", "texto": "Pequeno" },
-      { "letra": "C", "texto": "Nada" },
-      { "letra": "D", "texto": "Erro" }
+      { "letra": "A", "texto": "==" },
+      { "letra": "B", "texto": "!=" },
+      { "letra": "C", "texto": "=" },
+      { "letra": "D", "texto": ">" }
+    ]
+  },
+  {
+    "pergunta": "Identifique o erro:\nint 1x = 5;\nprint(\"%d\", 1x);",
+    "alternativas": [
+      { "letra": "A", "texto": "Tipo inválido" },
+      { "letra": "B", "texto": "Nome da variável inválido" },
+      { "letra": "C", "texto": "printf errado" },
+      { "letra": "D", "texto": "Não há erro" }
     ]
   }
 ]

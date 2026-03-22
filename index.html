@@ -17,7 +17,7 @@
                 <h1 class="vez" id="vez">Jogador 
                     <img src="./images/JA.png" alt="" id="vezImg">
                 </h1>
-                <div class="casa" id="a01" data-valor-da-casa="1">
+                <div class="casa" id="a01" data-valor-da-casa="1">01
                     <!-- Peões -->
                     <div class="peao" id="JA" data-casa-atual="1" data-jogador="1"></div>
                     <div class="peao" id="JB" data-casa-atual="1" data-jogador="2"></div>
@@ -93,27 +93,52 @@
                 <div class="casa" id="a62" data-valor-da-casa="62">62</div>
                 <div class="casa" id="a63" data-valor-da-casa="63">63</div>
                 <div class="casa" id="a64" data-valor-da-casa="64">64</div>
-
-                <!-- Caminho alternativo -->
-                <div class="casa" id="ac01">A01</div>
-                <div class="casa" id="ac02">A02</div>
-                <div class="casa" id="ac03">A03</div>
-                <div class="casa" id="ac04">A04</div>
-                <div class="casa" id="ac05">A05</div>
-                <div class="casa" id="ac06">A06</div>
-                <div class="casa" id="ac07">A07</div>
-                <div class="casa" id="ac08">A08</div>
-                <div class="casa" id="ac09">A09</div>
-                <div class="casa" id="ac10">A10</div>
                 
                 <!-- Rolagem de dado -->
                 <div class="dado" id="dado">
                     <h1 id="valorDoDado">1</h1>
                 </div>
+                
+                <!-- Vida do boss -->
+                <div class="vida">
+                    <div class="vida-atual" id="vidaAtual"></div>
+                </div>
+
+                <!-- Pontuação do time -->
+                <div class="equipe">
+                    <div class="jogador">
+                        <img src="./images/JA.png" alt="">
+                        <div class="pontos">
+                            <div class="pontos-atual" id="PJA"></div>
+                        </div>
+                    </div>
+                    <div class="jogador">
+                        <img src="./images/JB.png" alt="">
+                        <div class="pontos">
+                            <div class="pontos-atual" id="PJB"></div>
+                        </div>
+                    </div>
+                    <div class="jogador">
+                        <img src="./images/JC.png" alt="">
+                        <div class="pontos">
+                            <div class="pontos-atual" id="PJC"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagens do jogo -->
+                <img src="./images/bug.png" alt="" id="bug">
+                <img src="./images/pc.png" alt="" class="pc" id="pc1">
+                <img src="./images/pc.png" alt="" class="pc" id="pc2">
+                <img src="./images/pc.png" alt="" class="pc" id="pc3">
+                <img src="./images/pc.png" alt="" class="pc" id="pc4">
             </div>
         </div>
     </div>
-
+    <div class="mask"></div>
+    <video class="video-bg" autoplay muted loop>
+        <source src="images/bgvideo.mp4" type="video/mp4">
+    </video>
     <script src="./script/index.js"></script>
 </body>
 </html>

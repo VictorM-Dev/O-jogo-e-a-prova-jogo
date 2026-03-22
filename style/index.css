@@ -29,12 +29,16 @@
 }
 
 body{
-    background-color: var(--bg-black);
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
+    background-color: #555;
+    background-image: url(../images/bgvideo.mp4);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .content{
@@ -45,8 +49,26 @@ body{
     width: 100vw;
     height: 100vh;
     max-width: 1280px;
-    background-image: url(../images/bggame.jpg);
-    background-position: center;
+}
+
+.video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    z-index: -1;
 }
 
 .tabuleiro{
@@ -68,6 +90,7 @@ body{
     letter-spacing: 2px;
     text-shadow: 1px 1px 2px white;
     font-weight: bold;
+    box-shadow: 2px 2px 8px #333;
 }
 
 .casa p{
@@ -468,67 +491,6 @@ body{
     background-color: var(--casa6);
 }
 
-/* Caminho alternativo */
-#ac01{
-    top: calc(2 * var(--height-casa));
-    left: calc(9 * var(--width-casa));
-    background-color: var(--casa5);
-}
-
-#ac02{
-    top: calc(3 * var(--height-casa));
-    left: calc(9 * var(--width-casa));
-    background-color: var(--casa-bonus);
-}
-
-#ac03{
-    top: calc(3 * var(--height-casa));
-    left: calc(10 * var(--width-casa));
-    background-color: var(--casa5);
-}
-
-#ac04{
-    top: calc(3 * var(--height-casa));
-    left: calc(11 * var(--width-casa));
-    background-color: var(--casa-bonus);
-}
-
-#ac05{
-    top: calc(4 * var(--height-casa));
-    left: calc(14 * var(--width-casa));
-    background-color: var(--casa6);
-}
-
-#ac06{
-    top: calc(5 * var(--height-casa));
-    left: calc(14  * var(--width-casa));
-    background-color: var(--casa-bonus);
-}
-
-#ac07{
-    top: calc(4 * var(--height-casa));
-    left: calc(7 * var(--width-casa));
-    background-color: var(--casa6);
-}
-
-#ac08{
-    top: calc(5 * var(--height-casa));
-    left: calc(7  * var(--width-casa));
-    background-color: var(--casa5);
-}
-
-#ac09{
-    top: calc(6 * var(--height-casa));
-    left: calc(7  * var(--width-casa));
-    background-color: var(--casa6);
-}
-
-#ac10{
-    top: calc(7 * var(--height-casa));
-    left: calc(7  * var(--width-casa));
-    background-color: var(--casa-bonus);
-}
-
 /* dado */
 .dado{
     position: absolute;
@@ -614,10 +576,11 @@ body{
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(10px);
-
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .question-content{
+    position: relative;
     width: 1000px;
     height: 600px;
     background-color: red;
@@ -626,23 +589,289 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 8px;
+    box-shadow: 0 0 40px var(--casa-bonus);
+    background-image: url(../images/svg/question.svg);
+    background-size: cover;
+    padding-bottom: 70px;
+}
+
+.dificuldade{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--casa-bonus);
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transform: translateX(30%) translateY(30%);
+    box-shadow: 0 0 40px var(--casa-bonus);
+    border: 5px solid;
+}
+
+.pontuacao{
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.5);  
+    color: var(--casa-bonus);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-30%) translateY(30%);
+    border-radius: 15px;
+    box-shadow: 0 0 40px var(--casa-bonus);
+    border: 5px solid;
+
 }
 
 .pergunta{
-    width: 90%;
-    text-align: center;
-    padding: 50px;
+    width: 100%;
+    padding: 0 50px;
+    font-size: 1.2rem;
+    white-space: pre-line;
 }
 
 .alternativa{
     cursor: pointer;
     width: 90%;
     text-align: center;
+    height: 60px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px var(--casa-bonus);
+    border: 2px solid var(--bg-black);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    padding-left: 20px;
+    transition: 0.4s all ease;
 }
 
 .alternativa:hover{
-    transform: scale(1.1);
+    background-color: var(--casa-bonus);
+    transition: 0.4s all ease;
+    letter-spacing: 5px;
+}
+
+.jogador-atual{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(50%) translateY(-50%);
+}
+
+/* Vida */
+.vida{
+    height: 30px;
+    width: 70%;
+    background-color: var(--casa5);
+    position: absolute;
+    top: calc(11 * var(--height-casa));
+    border-radius: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    box-shadow: 2px 2px 8px #333;
+}
+
+.vida-atual{
+    height: 100%;
+    background-color: var(--casa3);
+    border-radius: 10px;
+}
+
+.vida-texto{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30px;
+    background-color: var(--bg-black);
+    color: var(--casa-bonus);
+    padding: 5px 15px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px #333;
+}
+
+/* Pontuação do time */
+.equipe{
+    position: absolute;
+    left: calc(7 * var(--width-casa));
+    top: calc((4 * var(--height-casa)) + (var(--height-casa)/2));
+    width: calc(5 * var(--width-casa));
+    height: calc(3 * var(--height-casa));
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px #333;
+    background-image: url(../images/card.jpg);
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.jogador{
+    width: 90%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+}
+
+.jogador img{
+    width: 30px;
+    left: 0;
+}
+
+.pontos{
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
+}
+
+.pontos-atual{
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    position: relative;
+    z-index: 999;
+}
+
+#PJA{
+    background-color: yellow;
+}
+
+#PJB{
+    background-color: red;
+}
+
+#PJC{
+    background-color: black;
+}
+
+.pontuacao-do-jogador{
+    position: absolute;
+    right: 0;
+    padding: 0 5px;
+    background-color: var(--casa-bonus);
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px var(--bg-black);
+    font-size: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Erro */
+.erro{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: red;
+    z-index: 2000;
+    transform: translateX(-50%) translateY(-50%);
+    width: 40%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border-radius: 20px;
+}
+
+.timer{
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--casa-bonus);
+    letter-spacing: 3px;
+    border-radius: 15px;
+    border: 5px solid;
+    box-shadow: 2px 2px 8px #333;
+}
+
+.urgente{
+    background-color: rgba(255, 0, 0) !important;
+    animation: acabando 1s infinite !important;
+}
+
+/* Casa surpresa */
+.surpresa{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* Bug */
+#bug{
+    z-index: 1000;
+    position: absolute;
+    width: calc(2 * var(--width-casa));
+    top: calc(9 * var(--height-casa));
+    left: calc(6 * var(--width-casa));
+    transform: translateY(30%);
+    transition: left 0.8s ease;
+}
+
+.pc{
+    position: absolute;
+    width: calc(var(--width-casa)*0.75);
+}
+
+#pc1{
+    left: calc(8 * var(--width-casa));
+    top: calc(10 * var(--height-casa));
+}
+
+#pc2{
+    left: calc(9 * var(--width-casa));
+    top: calc(10 * var(--height-casa));
+}
+
+#pc3{
+    left: calc(10 * var(--width-casa));
+    top: calc(10 * var(--height-casa));
+}
+
+#pc4{
+    left: calc(11 * var(--width-casa));
+    top: calc(10 * var(--height-casa));
+}
+
+/* Resultado */
+.resultado{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3000;
+    font-size: 6rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--casa-bonus);
+    text-transform: uppercase;
+    letter-spacing: 5px;
 }
 
 @media (max-width: 1280px) {
@@ -654,5 +883,13 @@ body{
     }
     .content{
         display: none;
+    }
+}
+
+@keyframes acabando{
+    0%{
+        transform: translateY(-50%) scale(1.1);
+    }100%{
+        transform: translateY(-50%) scale(0.9);
     }
 }

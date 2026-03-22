@@ -1,92 +1,92 @@
 [
   {
-    "pergunta": "O que é uma variável?",
+    "pergunta": "Qual será a saída?\nfor (int i = 0; i < 3; i++) {\n  print(\"%d  \", i);\n}",
     "alternativas": [
-      { "letra": "A", "texto": "Um tipo de erro" },
-      { "letra": "B", "texto": "Um espaço para armazenar dados" },
-      { "letra": "C", "texto": "Um programa" },
-      { "letra": "D", "texto": "Um loop" }
+      { "letra": "A", "texto": "1 2 3" },
+      { "letra": "B", "texto": "0 1 2" },
+      { "letra": "C", "texto": "0 1 2 3" },
+      { "letra": "D", "texto": "3 2 1" }
     ]
   },
   {
-    "pergunta": "O que o comando print faz?",
+    "pergunta": "O que será impresso?\nint i = 0;\nwhile (i < 3) {\n  print(\"%d \", i);\n  i++;\n}",
     "alternativas": [
-      { "letra": "A", "texto": "Repete código" },
-      { "letra": "B", "texto": "Mostra algo na tela" },
-      { "letra": "C", "texto": "Cria variável" },
-      { "letra": "D", "texto": "Apaga dados" }
+      { "letra": "A", "texto": "1 2 3" },
+      { "letra": "B", "texto": "0 1 2" },
+      { "letra": "C", "texto": "Loop infinito" },
+      { "letra": "D", "texto": "Nada" }
     ]
   },
   {
-    "pergunta": "Qual valor é booleano?",
+    "pergunta": "Qual será a saída?\nfor (int i = 0; i < 3; i++) {\n  print(\"A \");\n}",
     "alternativas": [
-      { "letra": "A", "texto": "10" },
-      { "letra": "B", "texto": "true" },
-      { "letra": "C", "texto": "\"texto\"" },
-      { "letra": "D", "texto": "3.5" }
+      { "letra": "A", "texto": "A" },
+      { "letra": "B", "texto": "A A A" },
+      { "letra": "C", "texto": "A A" },
+      { "letra": "D", "texto": "Loop infinito" }
     ]
   },
   {
-    "pergunta": "O que significa ==?",
+    "pergunta": "Qual será o valor final de x?\nint x = 5;\nx = x + 3;\nx = x * 2;",
     "alternativas": [
-      { "letra": "A", "texto": "Atribuir" },
-      { "letra": "B", "texto": "Comparar" },
-      { "letra": "C", "texto": "Somar" },
-      { "letra": "D", "texto": "Dividir" }
+      { "letra": "A", "texto": "11" },
+      { "letra": "B", "texto": "16" },
+      { "letra": "C", "texto": "39" },
+      { "letra": "D", "texto": "10" }
     ]
   },
   {
-    "pergunta": "Qual dessas é uma linguagem de programação?",
+    "pergunta": "Qual será a saída?\nint x = 10;\nif (x > 5 && x < 15) {\n  printf(\"A\");\n} else {\n  printf(\"B\");\n}",
     "alternativas": [
-      { "letra": "A", "texto": "HTML" },
-      { "letra": "B", "texto": "Cobol" },
-      { "letra": "C", "texto": "Vscode" },
-      { "letra": "D", "texto": "Windows" }
-    ]
-  },
-  {
-    "pergunta": "Qual desses é um tipo de dado?",
-    "alternativas": [
-      { "letra": "A", "texto": "if" },
-      { "letra": "B", "texto": "int" },
-      { "letra": "C", "texto": "for" },
-      { "letra": "D", "texto": "while" }
-    ]
-  },
-  {
-    "pergunta": "Qual dessas NÃO é uma linguagem de programação?",
-    "alternativas": [
-      { "letra": "A", "texto": "Cobol" },
-      { "letra": "B", "texto": "HTML" },
-      { "letra": "C", "texto": "Kotlin" },
-      { "letra": "D", "texto": "Python" }
-    ]
-  },
-  {
-    "pergunta": "Um algoritmo verifica se um número está entre 10 e 20 (inclusive). Qual número será considerado válido?",
-    "alternativas": [
-      { "letra": "A", "texto": "9" },
-      { "letra": "B", "texto": "10" },
-      { "letra": "C", "texto": "21" },
-      { "letra": "D", "texto": "25" }
-    ]
-  },
-  {
-    "pergunta": "print(\"%d\", 2+2); Qual será a saída?",
-    "alternativas": [
-      { "letra": "A", "texto": "2" },
-      { "letra": "B", "texto": "4" },
-      { "letra": "C", "texto": "22" },
-      { "letra": "D", "texto": "erro" }
-    ]
-  },
-  {
-    "pergunta": "if (Numero > 100) { printf(\"Grande\"); } else { printf(\"Pequeno\"); } O que será exibido se o número for 100?",
-    "alternativas": [
-      { "letra": "A", "texto": "Grande" },
-      { "letra": "B", "texto": "Pequeno" },
-      { "letra": "C", "texto": "Nada" },
+      { "letra": "A", "texto": "B" },
+      { "letra": "B", "texto": "A" },
+      { "letra": "C", "texto": "10" },
       { "letra": "D", "texto": "Erro" }
+    ]
+  },
+  {
+    "pergunta": "Quantas vezes o loop executa?\nfor (int i = 2; i < 10; i += 2)",
+    "alternativas": [
+      { "letra": "A", "texto": "3" },
+      { "letra": "B", "texto": "4" },
+      { "letra": "C", "texto": "5" },
+      { "letra": "D", "texto": "9" }
+    ]
+  },
+  {
+    "pergunta": "Qual o valor de x ao final?\nint x = 1;\nfor(int i = 0; i < 3; i++) {\n  x *= 2;\n}",
+    "alternativas": [
+      { "letra": "A", "texto": "4" },
+      { "letra": "B", "texto": "8" },
+      { "letra": "C", "texto": "6" },
+      { "letra": "D", "texto": "2" }
+    ]
+  },
+  {
+    "pergunta": "Quantas vezes será executado o print?\nfor(int i = 0; i < 3; i++) {\n  for(int j = 0; j < 2; j++) {\n    printf(\"*\");\n  }\n}",
+    "alternativas": [
+      { "letra": "A", "texto": "3" },
+      { "letra": "B", "texto": "6" },
+      { "letra": "C", "texto": "5" },
+      { "letra": "D", "texto": "2" }
+    ]
+  },
+  {
+    "pergunta": "Qual será a saída?\nint x = 3;\nfor(int i = 0; i < 2; i++) {\n  x += x;\n}",
+    "alternativas": [
+      { "letra": "A", "texto": "6" },
+      { "letra": "B", "texto": "12" },
+      { "letra": "C", "texto": "9" },
+      { "letra": "D", "texto": "3" }
+    ]
+  },
+  {
+    "pergunta": "Um algoritmo faz:\nSe idade >= 18 → “Adulto”\nSenão, se idade >= 16 → “Quase adulto”\nSenão → “Menor”\nQual será a saída para idade = 18?",
+    "alternativas": [
+      { "letra": "A", "texto": "Quase adulto" },
+      { "letra": "B", "texto": "adulto" },
+      { "letra": "C", "texto": "Menor" },
+      { "letra": "D", "texto": "Nada" }
     ]
   }
 ]
