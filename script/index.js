@@ -5,7 +5,7 @@ var jogador = 1;
 let perguntas = [];
 async function carregarPerguntas(){
     for(let i = 0; i<6; i++){
-        let dificuldade1Response = await fetch(`/perguntas/dificuldade${i+1}.json`);
+        let dificuldade1Response = await fetch(`/perguntas/dificuldade${i+1}.JSON`);
         let dificuldade = await dificuldade1Response.json();
         perguntas.push(dificuldade);
     }
