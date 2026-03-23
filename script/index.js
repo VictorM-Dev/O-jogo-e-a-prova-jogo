@@ -11,12 +11,13 @@ async function carregarPerguntas(){
     }
 }
 
-const vidaInicial = 300;
+const vidaInicial = 600;
 let vidaDoMonstro = vidaInicial;
 let pontosDosJogadores = [0,0,0];
 let erros = 0;
 let verificadorDePC = 1;
 let rodadas = 0;
+let perguntasErrads = 3;
 
 /* Carregando as perguntas */
 document.addEventListener("DOMContentLoaded", async () => {
@@ -348,7 +349,7 @@ function casaSuspresaSeisRetorno(){
 function perguntaErrada(problema){
     erros++;
     const bug = document.getElementById("bug");
-    if(erros == 2 || problema == 1){
+    if(erros == perguntasErradas || problema == 1){
         erros = 0;
 
         const bug = document.getElementById("bug");

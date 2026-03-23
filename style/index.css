@@ -128,79 +128,79 @@ body{
 #a04{
     top: calc(0 * var(--height-casa));
     left: calc(3 * var(--width-casa));
-    background-color: var(--casa1);
+    background-color: var(--casa3);
 }
 
 #a05{
     top: calc(0 * var(--height-casa));
     left: calc(4 * var(--width-casa));
-    background-color: var(--casa2);
+    background-color: var(--casa4);
 }
 
 #a06{
     top: calc(1 * var(--height-casa));
     left: calc(4 * var(--width-casa));
-    background-color: var(--casa1);
+    background-color: var(--casa-surpresa);
 }
 
 #a07{
     top: calc(2 * var(--height-casa));
     left: calc(4 * var(--width-casa));
-    background-color: var(--casa2);
+    background-color: var(--casa5);
 }
 
 #a08{
     top: calc(3 * var(--height-casa));
     left: calc(4 * var(--width-casa));
-    background-color: var(--casa1);
+    background-color: var(--casa6);
 }
 
 #a09{
     top: calc(3 * var(--height-casa));
     left: calc(5 * var(--width-casa));
-    background-color: var(--casa2);
+    background-color: var(--casa1);
 }
 
 #a10{
     top: calc(3 * var(--height-casa));
     left: calc(6 * var(--width-casa));
-    background-color: var(--casa1);
+    background-color: var(--casa2);
 }
 
 #a11{
     top: calc(3 * var(--height-casa));
     left: calc(7 * var(--width-casa));
-    background-color: var(--casa2);
+    background-color: var(--casa-surpresa);
 }
 
 #a12{
     top: calc(2 * var(--height-casa));
     left: calc(7 * var(--width-casa));
-    background-color: var(--casa-surpresa);
+    background-color: var(--casa3);
 }
 
 #a13{
     top: calc(1 * var(--height-casa));
     left: calc(7 * var(--width-casa));
-    background-color: var(--casa1);
+    background-color: var(--casa4);
 }
 
 #a14{
     top: calc(1 * var(--height-casa));
     left: calc(8 * var(--width-casa));
-    background-color: var(--casa2);
+    background-color: var(--casa5);
 }
 
 #a15{
     top: calc(1 * var(--height-casa));
     left: calc(9 * var(--width-casa));
-    background-color: var(--casa1);
+    background-color: var(--casa6);
 }
 
 #a16{
     top: calc(1 * var(--height-casa));
     left: calc(10 * var(--width-casa));
-    background-color: var(--casa2);
+    background-color: var(--casa-surpresa);
 }
 
 #a17{
@@ -218,277 +218,277 @@ body{
 #a19{
     top: calc(2 * var(--height-casa));
     left: calc(12 * var(--width-casa));
-    background-color: var(--casa1);
+    background-color: var(--casa3);
 }
 
 #a20{
     top: calc(3 * var(--height-casa));
     left: calc(12 * var(--width-casa));
-    background-color: var(--casa2);
+    background-color: var(--casa4);
 }
 
 #a21{
     top: calc(3 * var(--height-casa));
     left: calc(13 * var(--width-casa));
-    background-color: var(--casa1);
+    background-color: var(--casa-surpresa);
 }
 
 #a22{
     top: calc(3 * var(--height-casa));
     left: calc(14 * var(--width-casa));
-    background-color: var(--casa2);
+    background-color: var(--casa5);
 }
 
 #a23{
     top: calc(2 * var(--height-casa));
     left: calc(14 * var(--width-casa));
-    background-color: var(--casa-surpresa);
+    background-color: var(--casa6);
 }
 
 #a24{
     top: calc(1 * var(--height-casa));
     left: calc(14 * var(--width-casa));
-    background-color: var(--casa3);
+    background-color: var(--casa1);
 }
 
 #a25{
     top: calc(0 * var(--height-casa));
     left: calc(14 * var(--width-casa));
-    background-color: var(--casa4);
+    background-color: var(--casa2);
 }
 
 #a26{
     top: calc(0 * var(--height-casa));
     left: calc(15 * var(--width-casa));
-    background-color: var(--casa3);
+    background-color: var(--casa-surpresa);
 }
 
 #a27{
     top: calc(0 * var(--height-casa));
     left: calc(16 * var(--width-casa));
-    background-color: var(--casa4);
+    background-color: var(--casa3);
 }
 
 #a28{
     top: calc(0 * var(--height-casa));
     left: calc(17 * var(--width-casa));
-    background-color: var(--casa3);
+    background-color: var(--casa4);
 }
 
 #a29{
     top: calc(1 * var(--height-casa));
     left: calc(17 * var(--width-casa));
-    background-color: var(--casa4);
+    background-color: var(--casa5);
 }
 
 #a30{
     top: calc(2 * var(--height-casa));
     left: calc(17 * var(--width-casa));
-    background-color: var(--casa3);
+    background-color: var(--casa6);
 }
 
 #a31{
     top: calc(3 * var(--height-casa));
     left: calc(17 * var(--width-casa));
-    background-color: var(--casa4);
+    background-color: var(--casa-surpresa);
 }
 
 #a32{
     top: calc(4 * var(--height-casa));
     left: calc(17 * var(--width-casa));
-    background-color: var(--casa3);
+    background-color: var(--casa1);
 }
 
 #a33{
     top: calc(5 * var(--height-casa));
     left: calc(17 * var(--width-casa));
-    background-color: var(--casa4);
+    background-color: var(--casa2);
 }
 
 #a34{
     top: calc(6 * var(--height-casa));
     left: calc(17 * var(--width-casa));
-    background-color: var(--casa-surpresa);
+    background-color: var(--casa3);
 }
 
 #a35{
     top: calc(6 * var(--height-casa));
     left: calc(16 * var(--width-casa));
-    background-color: var(--casa3);
+    background-color: var(--casa4);
 }
 
 #a36{
     top: calc(6 * var(--height-casa));
     left: calc(15 * var(--width-casa));
-    background-color: var(--casa4);
+    background-color: var(--casa-surpresa);
 }
 
 #a37{
     top: calc(6 * var(--height-casa));
     left: calc(14 * var(--width-casa));
-    background-color: var(--casa3);
+    background-color: var(--casa5);
 }
 
 #a38{
     top: calc(7 * var(--height-casa));
     left: calc(14 * var(--width-casa));
-    background-color: var(--casa4);
+    background-color: var(--casa6);
 }
 
 #a39{
     top: calc(8 * var(--height-casa));
     left: calc(14 * var(--width-casa));
-    background-color: var(--casa3);
+    background-color: var(--casa1);
 }
 
 #a40{
     top: calc(9 * var(--height-casa));
     left: calc(14 * var(--width-casa));
-    background-color: var(--casa4);
+    background-color: var(--casa2);
 }
 
 #a41{
     top: calc(9 * var(--height-casa));
     left: calc(13 * var(--width-casa));
-    background-color: var(--casa3);
+    background-color: var(--casa-surpresa);
 }
 
 #a42{
     top: calc(9 * var(--height-casa));
     left: calc(12 * var(--width-casa));
-    background-color: var(--casa4);
+    background-color: var(--casa3);
 }
 
 #a43{
     top: calc(9 * var(--height-casa));
     left: calc(11 * var(--width-casa));
-    background-color: var(--casa3);
+    background-color: var(--casa4);
 }
 
 #a44{
     top: calc(8 * var(--height-casa));
     left: calc(11 * var(--width-casa));
-    background-color: var(--casa4);
+    background-color: var(--casa5);
 }
 
 #a45{
     top: calc(8 * var(--height-casa));
     left: calc(10 * var(--width-casa));
-    background-color: var(--casa-surpresa);
+    background-color: var(--casa6);
 }
 
 #a46{
     top: calc(8 * var(--height-casa));
     left: calc(9 * var(--width-casa));
-    background-color: var(--casa5);
+    background-color: var(--casa-surpresa);
 }
 
 #a47{
     top: calc(8 * var(--height-casa));
     left: calc(8 * var(--width-casa));
-    background-color: var(--casa6);
+    background-color: var(--casa1);
 }
 
 #a48{
     top: calc(8 * var(--height-casa));
     left: calc(7 * var(--width-casa));
-    background-color: var(--casa5);
+    background-color: var(--casa2);
 }
 
 #a49{
     top: calc(9 * var(--height-casa));
     left: calc(7 * var(--width-casa));
-    background-color: var(--casa6);
+    background-color: var(--casa3);
 }
 
 #a50{
     top: calc(9 * var(--height-casa));
     left: calc(6 * var(--width-casa));
-    background-color: var(--casa-surpresa);
+    background-color: var(--casa4);
 }
 
 #a51{
     top: calc(9 * var(--height-casa));
     left: calc(5 * var(--width-casa));
-    background-color: var(--casa5);
+    background-color: var(--casa-surpresa);
 }
 
 #a52{
     top: calc(9 * var(--height-casa));
     left: calc(4 * var(--width-casa));
-    background-color: var(--casa6);
+    background-color: var(--casa5);
 }
 
 #a53{
     top: calc(9 * var(--height-casa));
     left: calc(3 * var(--width-casa));
-    background-color: var(--casa5);
+    background-color: var(--casa6);
 }
 
 #a54{
     top: calc(9 * var(--height-casa));
     left: calc(2 * var(--width-casa));
-    background-color: var(--casa6);
+    background-color: var(--casa1);
 }
 
 #a55{
     top: calc(8 * var(--height-casa));
     left: calc(2 * var(--width-casa));
-    background-color: var(--casa-surpresa);
+    background-color: var(--casa2);
 }
 
 #a56{
     top: calc(8 * var(--height-casa));
     left: calc(1 * var(--width-casa));
-    background-color: var(--casa5);
+    background-color: var(--casa-surpresa);
 }
 
 #a57{
     top: calc(7 * var(--height-casa));
     left: calc(1 * var(--width-casa));
-    background-color: var(--casa6);
+    background-color: var(--casa3);
 }
 
 #a58{
     top: calc(7 * var(--height-casa));
     left: calc(0 * var(--width-casa));
-    background-color: var(--casa5);
+    background-color: var(--casa4);
 }
 
 #a59{
     top: calc(6 * var(--height-casa));
     left: calc(0 * var(--width-casa));
-    background-color: var(--casa6);
+    background-color: var(--casa5);
 }
 
 #a60{
     top: calc(5 * var(--height-casa));
     left: calc(0 * var(--width-casa));
-    background-color: var(--casa-surpresa);
+    background-color: var(--casa6);
 }
 
 #a61{
     top: calc(4 * var(--height-casa));
     left: calc(0 * var(--width-casa));
-    background-color: var(--casa5);
+    background-color: var(--casa-surpresa);
 }
 
 #a62{
     top: calc(3 * var(--height-casa));
     left: calc(0 * var(--width-casa));
-    background-color: var(--casa6);
+    background-color: var(--casa1);
 }
 
 #a63{
     top: calc(2 * var(--height-casa));
     left: calc(0 * var(--width-casa));
-    background-color: var(--casa5);
+    background-color: var(--casa2);
 }
 
 #a64{
     top: calc(1 * var(--height-casa));
     left: calc(0 * var(--width-casa));
-    background-color: var(--casa6);
+    background-color: var(--casa3);
 }
 
 /* dado */
