@@ -17,7 +17,7 @@ let pontosDosJogadores = [0,0,0];
 let erros = 0;
 let verificadorDePC = 1;
 let rodadas = 0;
-let perguntasErrads = 3;
+let perguntasErradas = 3;
 
 /* Carregando as perguntas */
 document.addEventListener("DOMContentLoaded", async () => {
