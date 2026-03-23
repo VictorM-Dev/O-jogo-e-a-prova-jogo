@@ -2,11 +2,12 @@
   {
     "pergunta": "Se o número inicial for 7, qual será o resultado final?\nif (numero % 2 == 0) {\n  numero += 10;\n} else {\n  numero += 5;\n}\nprint(\"%d\", numero);",
     "alternativas": [
-      { "letra": "A", "texto": "5" },
-      { "letra": "B", "texto": "12" },
+      { "letra": "A", "texto": "12" },
+      { "letra": "B", "texto": "5" },
       { "letra": "C", "texto": "17" },
       { "letra": "D", "texto": "10" }
-    ]
+    ],
+    "dificuldade": "2"
   },
   {
     "pergunta": "Qual será a saída do código?\nint x = 2;\nint y = 3;\nprint(\"%d\", x + y * 2);",
@@ -15,7 +16,8 @@
       { "letra": "B", "texto": "8" },
       { "letra": "C", "texto": "7" },
       { "letra": "D", "texto": "12" }
-    ]
+    ],
+    "dificuldade": "2"
   },
   {
     "pergunta": "Qual será a saída do código?\nint x = 5;\nif (x > 3 && x < 10){\n  print(\"OK\");\n}else{\n  print(\"ERRO\");\n}",
@@ -24,7 +26,8 @@
       { "letra": "B", "texto": "OK" },
       { "letra": "C", "texto": "5" },
       { "letra": "D", "texto": "Nada" }
-    ]
+    ],
+    "dificuldade": "2"
   },
   {
     "pergunta": "Dado um número inteiro, considere a expressão: numero % 2 == 0. Essa condição indica que o número:",
@@ -33,7 +36,8 @@
       { "letra": "B", "texto": "é divisível por 2 sem deixar resto" },
       { "letra": "C", "texto": "é um numero inexistente" },
       { "letra": "D", "texto": "é um numero impar" }
-    ]
+    ],
+    "dificuldade": "2"
   },
   {
     "pergunta": "O que faz um if?",
@@ -42,16 +46,18 @@
       { "letra": "B", "texto": "Toma decisão" },
       { "letra": "C", "texto": "Soma valores" },
       { "letra": "D", "texto": "Imprime" }
-    ]
+    ],
+    "dificuldade": "2"
   },
   {
     "pergunta": "O que é string?",
     "alternativas": [
       { "letra": "A", "texto": "Número" },
-      { "letra": "B", "texto": "Conjunto de caracteres" },
+      { "letra": "B", "texto": "Texto" },
       { "letra": "C", "texto": "Booleano" },
-      { "letra": "D", "texto": "Texto" }
-    ]
+      { "letra": "D", "texto": "Loop" }
+    ],
+    "dificuldade": "2"
   },
   {
     "pergunta": "Identifique o erro de comparação:\nint x = 10;\nif (x = 10) { }",
@@ -60,7 +66,8 @@
       { "letra": "B", "texto": "Uso incorreto de = no if" },
       { "letra": "C", "texto": "x não é um nome válido de variável" },
       { "letra": "D", "texto": "Não há erro" }
-    ]
+    ],
+    "dificuldade": "2"
   },
   {
     "pergunta": "O que é um loop?",
@@ -69,16 +76,18 @@
       { "letra": "B", "texto": "Repetição" },
       { "letra": "C", "texto": "Variável" },
       { "letra": "D", "texto": "Função" }
-    ]
+    ],
+    "dificuldade": "2"
   },
   {
-    "pergunta": "Qual símbolo é o símbolo “diferente”?",
+    "pergunta": "Qual símbolo é “diferente”?",
     "alternativas": [
       { "letra": "A", "texto": "==" },
       { "letra": "B", "texto": "!=" },
       { "letra": "C", "texto": "=" },
       { "letra": "D", "texto": ">" }
-    ]
+    ],
+    "dificuldade": "2"
   },
   {
     "pergunta": "Identifique o erro:\nint 1x = 5;\nprint(\"%d\", 1x);",
@@ -87,6 +96,7 @@
       { "letra": "B", "texto": "Nome da variável inválido" },
       { "letra": "C", "texto": "printf errado" },
       { "letra": "D", "texto": "Não há erro" }
-    ]
+    ],
+    "dificuldade": "2"
   }
 ]

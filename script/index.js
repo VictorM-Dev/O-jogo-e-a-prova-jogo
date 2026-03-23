@@ -11,7 +11,7 @@ async function carregarPerguntas(){
     }
 }
 
-const vidaInicial = 500;
+const vidaInicial = 300;
 let vidaDoMonstro = vidaInicial;
 let pontosDosJogadores = [0,0,0];
 let erros = 0;
@@ -403,6 +403,25 @@ function resultado(resultado){
         const h1 = document.createElement("h1");
         h1.textContent = "Você venceu, parabéns!";
         h1.classList.add("resultado");
+        jogadorVencedor();
         document.body.appendChild(h1);
     }
 }
+
+function jogadorVencedor(){
+    let maior = pontosDosJogadores[0];
+    let indice = 0;
+    for(let i=0; i<3; i++){
+        if(maior < pontosDosJogadores[i]){
+            maior = pontosDosJogadores[i];
+            indice = i;
+        }
+    }
+
+    const img = document.createElement("img");
+    var jogadores = ["JA", "JB", "JC"];
+    img.src = `images/${jogadores[indice]}.png`;
+
+    img.classList.add("vencedor");
+    document.body.appendChild(img);
+} 

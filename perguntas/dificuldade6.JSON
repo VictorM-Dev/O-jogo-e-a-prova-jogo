@@ -1,92 +1,101 @@
 [
   {
-    "pergunta": "O que é uma variável?",
+    "pergunta": "Considere o algoritmo de ordenação Bubble Sort. Se um vetor já estiver ordenado, qual a complexidade de tempo no melhor caso se houver uma flag de controle?",
     "alternativas": [
-      { "letra": "A", "texto": "Um tipo de erro" },
-      { "letra": "B", "texto": "Um espaço para armazenar dados" },
-      { "letra": "C", "texto": "Um programa" },
-      { "letra": "D", "texto": "Um loop" }
+      { "letra": "A", "texto": "O(1)" },
+      { "letra": "B", "texto": "O(n)" },
+      { "letra": "C", "texto": "O(log n)" },
+      { "letra": "D", "texto": "O(n^2)" }
     ]
   },
   {
-    "pergunta": "O que o comando print faz?",
+    "pergunta": "Considere um algoritmo que gera números pseudo aleatórios. Qual afirmação é verdadeira sobre problemas relacionados à previsão exata de resultados aleatórios?",
     "alternativas": [
-      { "letra": "A", "texto": "Repete código" },
-      { "letra": "B", "texto": "Mostra algo na tela" },
-      { "letra": "C", "texto": "Cria variável" },
-      { "letra": "D", "texto": "Apaga dados" }
+      { "letra": "A", "texto": "Sempre é possível criar um algoritmo que prevê todos os números gerados, dado tempo suficiente" },
+      { "letra": "B", "texto": "Não existe algoritmo que garanta prever todos os resultados futuros de uma sequência aleatória perfeita" },
+      { "letra": "C", "texto": "Qualquer sequência aleatória pode ser revertida se conhecermos a semente inicial" },
+      { "letra": "D", "texto": "Problemas envolvendo aleatoriedade não têm relação com indecidibilidade" }
     ]
   },
   {
-    "pergunta": "Qual valor é booleano?",
+    "pergunta": "Um vetor v de tamanho 8 contém os valores: int v[8] = {0, 0, 3, 0, 0, 7, 0, 0}; Queremos representar esse vetor como vetor esparso, armazenando apenas os elementos diferentes de zero com seus índices. Qual das representações abaixo está correta?",
+    "alternativas": [
+      { "letra": "A", "texto": "(0,0), (1,0), (2,3), (5,7)" },
+      { "letra": "B", "texto": "(2,3), (5,7)" },
+      { "letra": "C", "texto": "(0,3), (1,7)" },
+      { "letra": "D", "texto": "(3,0), (6,7)" }
+    ]
+  },
+  {
+    "pergunta": "Qual é a vantagem principal de um vetor esparso?",
+    "alternativas": [
+      { "letra": "A", "texto": "Acesso instantâneo a qualquer índice" },
+      { "letra": "B", "texto": "Menor consumo de memória para vetores com muitos zeros" },
+      { "letra": "C", "texto": "Ordenação mais rápida que vetores comuns" },
+      { "letra": "D", "texto": "Simplificação de código em todos os casos" }
+    ]
+  },
+  {
+    "pergunta": "Em um sistema que gera IDs numéricos sequenciais para registros (1, 2, 3, …), qual problema pode ocorrer que se aproxima de um problema indecidível?",
+    "alternativas": [
+      { "letra": "A", "texto": "Sempre é possível prever o próximo ID sem erro" },
+      { "letra": "B", "texto": "Em sistemas concorrentes, não há algoritmo simples que garanta evitar todos os conflitos de IDs simultâneos sem mecanismos de sincronização complexos" },
+      { "letra": "C", "texto": "IDs simples nunca podem se repetir, mesmo sem controle" },
+      { "letra": "D", "texto": "Todos os problemas com IDs sequenciais são facilmente resolvidos por qualquer banco de dados" }
+    ]
+  },
+  {
+    "pergunta": "Em sistemas distribuídos, cada objeto recebe um ID único (como um UUID). Qual afirmação sobre problemas relacionados a IDs é correta?",
+    "alternativas": [
+      { "letra": "A", "texto": "É sempre possível prever qual será o próximo ID gerado por qualquer sistema" },
+      { "letra": "B", "texto": "Não existe algoritmo que garanta prever ou replicar IDs futuros em sistemas distribuídos sem acesso interno completo" },
+      { "letra": "C", "texto": "IDs únicos podem ser reutilizados automaticamente sem risco de conflito" },
+      { "letra": "D", "texto": "Todos os problemas envolvendo IDs podem ser resolvidos com funções hash simples" }
+    ]
+  },
+  {
+    "pergunta": "Pilha e Ordem: Você insere os elementos [10, 20, 30] em uma Pilha e depois os remove um a um, inserindo-os imediatamente em uma Fila. Qual será o primeiro elemento removido da Fila?",
     "alternativas": [
       { "letra": "A", "texto": "10" },
-      { "letra": "B", "texto": "true" },
-      { "letra": "C", "texto": "\"texto\"" },
-      { "letra": "D", "texto": "3.5" }
+      { "letra": "B", "texto": "30" },
+      { "letra": "C", "texto": "20" },
+      { "letra": "D", "texto": "A estrutura quebra" }
     ]
   },
   {
-    "pergunta": "O que significa ==?",
+    "pergunta": "Qual o valor da expressão (True OR False) AND (NOT True)?",
     "alternativas": [
-      { "letra": "A", "texto": "Atribuir" },
-      { "letra": "B", "texto": "Comparar" },
-      { "letra": "C", "texto": "Somar" },
-      { "letra": "D", "texto": "Dividir" }
+      { "letra": "A", "texto": "True" },
+      { "letra": "B", "texto": "False" },
+      { "letra": "C", "texto": "Erro de sintaxe" },
+      { "letra": "D", "texto": "Null" }
     ]
   },
   {
-    "pergunta": "Qual dessas é uma linguagem de programação?",
+    "pergunta": "Uma API retorna um JSON que você mapeia para um vetor: int data[3] = {10, 20, 30}; Qual o valor de data[data[0]/10]?",
     "alternativas": [
-      { "letra": "A", "texto": "HTML" },
-      { "letra": "B", "texto": "Cobol" },
-      { "letra": "C", "texto": "Vscode" },
-      { "letra": "D", "texto": "Windows" }
+      { "letra": "A", "texto": "Erro de índice fora do vetor" },
+      { "letra": "B", "texto": "20" },
+      { "letra": "C", "texto": "30" },
+      { "letra": "D", "texto": "10" }
     ]
   },
   {
-    "pergunta": "Qual desses é um tipo de dado?",
+    "pergunta": "Qual o perigo de usar muitos ternários aninhados em um sistema profissional?",
     "alternativas": [
-      { "letra": "A", "texto": "if" },
-      { "letra": "B", "texto": "int" },
-      { "letra": "C", "texto": "for" },
-      { "letra": "D", "texto": "while" }
+      { "letra": "A", "texto": "Incompatibilidade com processadores antigos" },
+      { "letra": "B", "texto": "Redução drástica na legibilidade e facilidade de manutenção do código" },
+      { "letra": "C", "texto": "Risco de corromper o banco de dados" },
+      { "letra": "D", "texto": "Ocupação excessiva de memória RAM" }
     ]
   },
   {
-    "pergunta": "Qual dessas NÃO é uma linguagem de programação?",
+    "pergunta": "Considere o código abaixo:\nfloat x = 0.0;\nfloat y = (x != 0.0) ? (10.0 / x) : ((x == 0.0) ? 100.5 : -50.25);\nQual será o valor de y após a execução?",
     "alternativas": [
-      { "letra": "A", "texto": "Cobol" },
-      { "letra": "B", "texto": "HTML" },
-      { "letra": "C", "texto": "Kotlin" },
-      { "letra": "D", "texto": "Python" }
-    ]
-  },
-  {
-    "pergunta": "Um algoritmo verifica se um número está entre 10 e 20 (inclusive). Qual número será considerado válido?",
-    "alternativas": [
-      { "letra": "A", "texto": "9" },
-      { "letra": "B", "texto": "10" },
-      { "letra": "C", "texto": "21" },
-      { "letra": "D", "texto": "25" }
-    ]
-  },
-  {
-    "pergunta": "print(\"%d\", 2+2); Qual será a saída?",
-    "alternativas": [
-      { "letra": "A", "texto": "2" },
-      { "letra": "B", "texto": "4" },
-      { "letra": "C", "texto": "22" },
-      { "letra": "D", "texto": "erro" }
-    ]
-  },
-  {
-    "pergunta": "if (Numero > 100) { printf(\"Grande\"); } else { printf(\"Pequeno\"); } O que será exibido se o número for 100?",
-    "alternativas": [
-      { "letra": "A", "texto": "Grande" },
-      { "letra": "B", "texto": "Pequeno" },
-      { "letra": "C", "texto": "Nada" },
-      { "letra": "D", "texto": "Erro" }
+      { "letra": "A", "texto": "0.0" },
+      { "letra": "B", "texto": "100.5" },
+      { "letra": "C", "texto": "O programa gera erro de divisão por zero" },
+      { "letra": "D", "texto": "-50.25" }
     ]
   }
 ]

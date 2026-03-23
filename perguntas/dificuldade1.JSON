@@ -63,7 +63,7 @@
     ]
   },
   {
-    "pergunta": "Um algoritmo verifica se um número está entre 10 e 20 (inclusive).\nQual número será considerado válido?",
+    "pergunta": "Um algoritmo verifica se um número está entre 10 e 20 (inclusive). Qual número será considerado válido?",
     "alternativas": [
       { "letra": "A", "texto": "9" },
       { "letra": "B", "texto": "10" },
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "pergunta": "print(\"%d\", 2+2);\nQual será a saída?",
+    "pergunta": "print(\"%d\", 2+2); Qual será a saída?",
     "alternativas": [
       { "letra": "A", "texto": "2" },
       { "letra": "B", "texto": "4" },
@@ -81,7 +81,7 @@
     ]
   },
   {
-    "pergunta": "if (Numero > 100) {\n    printf(\"Grande\");\n} else {\n    printf(\"Pequeno\");\n}\nO que será exibido se o número for 100?",
+    "pergunta": "if (Numero > 100) { printf(\"Grande\"); } else { printf(\"Pequeno\"); } O que será exibido se o número for 100?",
     "alternativas": [
       { "letra": "A", "texto": "Grande" },
       { "letra": "B", "texto": "Pequeno" },

@@ -730,6 +730,7 @@ body{
     align-items: center;
     gap: 10px;
     border-radius: 15px;
+    z-index: 1001;
 }
 
 .jogador img{
@@ -872,6 +873,43 @@ body{
     color: var(--casa-bonus);
     text-transform: uppercase;
     letter-spacing: 5px;
+}
+
+/* Imagens do jogo */
+.imagem-do-jogo{
+    width: calc(2.5 * var(--width-casa));
+    position: absolute;
+}
+
+#img1{
+    left: calc(15 * var(--width-casa) - var(--width-casa)/3);
+    top: calc(1 * var(--height-casa) - var(--height-casa)/3);
+    transform: rotateZ(15deg);
+    box-shadow: 1px 1px 2px var(--bg-black);
+    border-radius: 50%;
+}
+
+#img2{
+    left: calc(12 * var(--width-casa) - var(--width-casa)/2);
+    top: calc(5 * var(--height-casa) - var(--height-casa)/3);
+    transform: rotateZ(5deg);
+    box-shadow: 1px 1px 2px var(--bg-black);
+    border-radius: 50%;
+}
+
+#img3{
+    left: calc(4 * var(--width-casa) + var(--width-casa));
+    top: calc(5 * var(--height-casa) - var(--height-casa)/3);
+    transform: rotateZ(-5deg) rotateY(180deg);
+    box-shadow: 1px 1px 2px var(--bg-black);
+    border-radius: 50%;
+}
+
+.vencedor{
+    position: absolute;
+    z-index: 3001;
+    top: 200px;
+    width: 100px;
 }
 
 @media (max-width: 1280px) {

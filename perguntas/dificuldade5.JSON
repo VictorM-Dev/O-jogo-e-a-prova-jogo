@@ -54,12 +54,12 @@
     ]
   },
   {
-    "pergunta": "Ao passar um vetor para uma função em C, como: void func(int v[]), o que acontece?",
+    "pergunta": "Ao passar um vetor para uma função como: void func(int v[]), o que acontece?",
     "alternativas": [
-      { "letra": "A", "texto": "O programa trava porque funções não aceitam vetores" },
-      { "letra": "B", "texto": "A função recebe o endereço do primeiro elemento, permitindo alterar o vetor original" },
-      { "letra": "C", "texto": "Uma cópia completa do vetor é criada na memória para a função" },
-      { "letra": "D", "texto": "A função só pode ler os valores, mas não alterá-los" }
+      { "letra": "A", "texto": "O programa trava porque funções não aceitam vetores." },
+      { "letra": "B", "texto": "A função recebe o endereço de memória, permitindo alterar o vetor original." },
+      { "letra": "C", "texto": "Uma cópia completa do vetor é criada na memória para a função." },
+      { "letra": "D", "texto": "A função só pode ler os valores, mas não alterá-los." }
     ]
   },
   {
