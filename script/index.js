@@ -290,8 +290,8 @@ function casaSurpresaDois(questionContainer){
 
 function casaSurpresaTres(questionContainer){
     vidaDoMonstro += 50;
-    if(vidaDoMonstro > 300){
-        vidaDoMonstro = 300;
+    if(vidaDoMonstro > vidaInicial){
+        vidaDoMonstro = vidaInicial;
     }
     carregarVida(vidaDoMonstro);
 
