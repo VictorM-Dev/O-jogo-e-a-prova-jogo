@@ -171,7 +171,7 @@ function criadorDePergunta(questionContainer, questionContent, dificuldade, cor)
         }
         questionContent.appendChild(h1);
     }
-
+    provocar(questionContent);
     document.body.appendChild(questionContainer);
 }
 
@@ -426,3 +426,31 @@ function jogadorVencedor(){
     img.classList.add("vencedor");
     document.body.appendChild(img);
 } 
+
+// Gerador de provocações
+function provocar(questionContent){
+    let falasDeProvocar = [
+        "A vó de Davi resolveu essa achando que era bingo!",
+        "Ema ema ema, cada um com seus problemas...",
+        "Essa é para saber se você sabe ler!",
+        "Emídio pediu truco quando viu essa!",
+        "Meu avó resoleu essa usando regra de 3",
+        "Mi hermano Airton me diste que eras C",
+        "Joaquim não é pardo e disse que tu num sabe essa",
+        "Meu primo de 2 anos respondeu essa!",
+        "Tenente bananinha falou que aprendeu no tiro de guerra",
+        "Z... Z... Z... Z...",
+        "João Victor me disse essa... Mas ele não foi claro o suficiente"
+    ];
+    var numero = Math.floor(Math.random()*falasDeProvocar.length);
+
+    const img = document.createElement("img");
+    img.src = "images/bug.png"
+    img.classList.add("bug-provocar");
+    questionContent.appendChild(img);
+
+    const provocar = document.createElement("h1");
+    provocar.textContent = falasDeProvocar[numero];
+    provocar.classList.add("bug-provocacao");
+    questionContent.appendChild(provocar);
+}

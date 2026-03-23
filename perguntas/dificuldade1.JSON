@@ -27,7 +27,7 @@
     ]
   },
   {
-    "pergunta": "O que significa ==?",
+    "pergunta": "O que significa o operador \"==\"?",
     "alternativas": [
       { "letra": "A", "texto": "Atribuir" },
       { "letra": "B", "texto": "Comparar" },
@@ -81,7 +81,7 @@
     ]
   },
   {
-    "pergunta": "if (Numero > 100) { printf(\"Grande\"); } else { printf(\"Pequeno\"); } O que será exibido se o número for 100?",
+    "pergunta": "if (Numero > 100) { print(\"Grande\"); } else { print(\"Pequeno\"); } O que será exibido se o número for 100?",
     "alternativas": [
       { "letra": "A", "texto": "Grande" },
       { "letra": "B", "texto": "Pequeno" },

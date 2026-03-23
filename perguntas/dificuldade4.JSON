@@ -1,6 +1,6 @@
 [
   {
-    "pergunta": "O que será impresso?\nint y = 1\nint x = 10;\nif (y==1) {\n  int x = 5;\n  print(\"%d \", x);\n}\nprint(\"%d\", x);",
+    "pergunta": "O que será impresso?\nint y = 1;\nint x = 10;\nif (y==1) {\n  int x = 5;\n  print(\"%d \", x);\n}\nprint(\"%d\", x);",
     "alternativas": [
       { "letra": "A", "texto": "10 10" },
       { "letra": "B", "texto": "5 10" },

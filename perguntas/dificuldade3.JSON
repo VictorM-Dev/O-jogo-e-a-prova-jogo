@@ -36,7 +36,7 @@
     ]
   },
   {
-    "pergunta": "Qual será a saída?\nint x = 10;\nif (x > 5 && x < 15) {\n  printf(\"A\");\n} else {\n  printf(\"B\");\n}",
+    "pergunta": "Qual será a saída?\nint x = 10;\nif (x > 5 && x < 15) {\n  print(\"A\");\n} else {\n  printf(\"B\");\n}",
     "alternativas": [
       { "letra": "A", "texto": "B" },
       { "letra": "B", "texto": "A" },
@@ -63,7 +63,7 @@
     ]
   },
   {
-    "pergunta": "Quantas vezes será executado o print?\nfor(int i = 0; i < 3; i++) {\n  for(int j = 0; j < 2; j++) {\n    printf(\"*\");\n  }\n}",
+    "pergunta": "Quantas vezes será executado o print?\nfor(int i = 0; i < 3; i++) {\n  for(int j = 0; j < 2; j++) {\n    print(\"*\");\n  }\n}",
     "alternativas": [
       { "letra": "A", "texto": "3" },
       { "letra": "B", "texto": "6" },
@@ -84,7 +84,7 @@
     "pergunta": "Um algoritmo faz:\nSe idade >= 18 → “Adulto”\nSenão, se idade >= 16 → “Quase adulto”\nSenão → “Menor”\nQual será a saída para idade = 18?",
     "alternativas": [
       { "letra": "A", "texto": "Quase adulto" },
-      { "letra": "B", "texto": "adulto" },
+      { "letra": "B", "texto": "Adulto" },
       { "letra": "C", "texto": "Menor" },
       { "letra": "D", "texto": "Nada" }
     ]

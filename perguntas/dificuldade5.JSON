@@ -9,7 +9,7 @@
     ]
   },
   {
-    "pergunta": "Qual a saída deste código?\nint v[3] = {2, 4, 6};\nprintf(\"%d\", v[v[0]]);",
+    "pergunta": "Qual a saída deste código?\nint v[3] = {2, 4, 6};\nprint(\"%d\", v[v[0]]);",
     "alternativas": [
       { "letra": "A", "texto": "Um vetor não pode ser índice de si mesmo" },
       { "letra": "B", "texto": "6" },
@@ -27,7 +27,7 @@
     ]
   },
   {
-    "pergunta": "O que o código abaixo imprime?\nint x = 5;\nif (x++ > 5 && ++x > 6) {\n  printf(\"A\");\n} else {\n  printf(\"%d\", x);\n}",
+    "pergunta": "O que o código abaixo imprime?\nint x = 5;\nif (x++ > 5 && ++x > 6) {\n  print(\"A\");\n} else {\n  print(\"%d\", x);\n}",
     "alternativas": [
       { "letra": "A", "texto": "5" },
       { "letra": "B", "texto": "6" },
