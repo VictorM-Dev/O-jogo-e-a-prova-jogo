@@ -11,7 +11,7 @@ async function carregarPerguntas(){
     }
 }
 
-const vidaInicial = 600;
+const vidaInicial = 1000;
 let vidaDoMonstro = vidaInicial;
 let pontosDosJogadores = [0,0,0];
 let erros = 0;
@@ -40,9 +40,12 @@ dado.addEventListener("click", e => {
 function carregarVida(vidaDoMonstro){
     const vidaAtual = document.getElementById("vidaAtual");
     const h1 = document.createElement("h1");
+    if(!h1){
+        h1 = document.createElement("h1");
+        h1.classList.add("vida-texto");
+        vidaAtual.appendChild(h1);
+    }
     h1.textContent = vidaDoMonstro;
-    h1.classList.add("vida-texto");
-    vidaAtual.appendChild(h1);
     let vida = (vidaDoMonstro/vidaInicial) * 100;
     if(vida <= 0){
         resultado(1);

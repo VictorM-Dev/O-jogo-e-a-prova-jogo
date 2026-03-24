@@ -2,8 +2,8 @@
   {
     "pergunta": "Se o número inicial for 7, qual será o resultado final?\nif (numero % 2 == 0) {\n  numero += 10;\n} else {\n  numero += 5;\n}\nprint(\"%d\", numero);",
     "alternativas": [
-      { "letra": "A", "texto": "12" },
-      { "letra": "B", "texto": "5" },
+      { "letra": "A", "texto": "5" },
+      { "letra": "B", "texto": "12" },
       { "letra": "C", "texto": "17" },
       { "letra": "D", "texto": "10" }
     ],
