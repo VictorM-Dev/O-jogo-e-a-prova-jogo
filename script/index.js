@@ -17,7 +17,7 @@ let pontosDosJogadores = [0,0,0];
 let erros = 0;
 let verificadorDePC = 1;
 let rodadas = 0;
-let perguntasErradas = 3;
+let perguntasErradas = 2;
 
 /* Carregando as perguntas */
 document.addEventListener("DOMContentLoaded", async () => {
@@ -371,7 +371,7 @@ function perguntaErrada(problema){
         if(pc){
             pc.remove();
             verificadorDePC++;
-            if(pc){
+            if(pc.id === "pc4"){
                 resultado(0);
             }
         }
@@ -440,7 +440,7 @@ function jogadorVencedor(){
 // Gerador de provocações
 function provocar(questionContent){
     let falasDeProvocar = [
-        "A vó de Davi resolveu essa achando que era bingo!",
+        "Minha avó resolveu essa achando que era bingo!",
         "Ema ema ema, cada um com seus problemas...",
         "Essa é para saber se você sabe ler!",
         "Emídio pediu truco quando viu essa!",
