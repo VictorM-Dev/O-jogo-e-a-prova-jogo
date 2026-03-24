@@ -39,18 +39,24 @@ dado.addEventListener("click", e => {
 /* Carrega a vida do monstro */
 function carregarVida(vidaDoMonstro){
     const vidaAtual = document.getElementById("vidaAtual");
-    const h1 = document.createElement("h1");
+    let h1 = vidaAtual.querySelector("h1");
+
     if(!h1){
         h1 = document.createElement("h1");
         h1.classList.add("vida-texto");
         vidaAtual.appendChild(h1);
     }
+
     h1.textContent = vidaDoMonstro;
-    let vida = (vidaDoMonstro/vidaInicial) * 100;
+
+    let vida = (vidaDoMonstro / vidaInicial) * 100;
+
     if(vida <= 0){
         resultado(1);
     }
+
     vidaAtual.style.width = vida + "%";
+
     casa1 = getComputedStyle(root).getPropertyValue("--casa1").trim();
     casa2 = getComputedStyle(root).getPropertyValue("--casa2").trim();
     casa3 = getComputedStyle(root).getPropertyValue("--casa3").trim();
