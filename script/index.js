@@ -228,7 +228,7 @@ function pontuaJogador(pontos, jogador){
 }
 
 function casaSurpresa(questionContainer, questionContent){
-    let numero = Math.floor(Math.random()*5)+1;
+    let numero = Math.floor(Math.random()*6)+1;
     var mensagem = document.createElement("h1");
     mensagem.classList.add("surpresa");
 
@@ -244,7 +244,7 @@ function casaSurpresa(questionContainer, questionContent){
             casaSurpresaDois(questionContainer);
             break;
         case 3:
-            mensagem.textContent = "O bug cresceu e ganhou 50 pontos!";
+            mensagem.textContent = "O bug cresceu e ganhou 150 pontos!";
             questionContent.appendChild(mensagem);
             casaSurpresaTres(questionContainer);
             break;
@@ -260,7 +260,7 @@ function casaSurpresa(questionContainer, questionContent){
         case 5:
             mensagem.textContent = "Formiga derrubou café em um computador, você perdeu um PC";
             questionContent.appendChild(mensagem);
-            casaSurpresaCinco(questionContainer, 1);
+            casaSurpresaCinco(questionContainer);
             break;
         case 6:
             mensagem.textContent = "Rafael se estressou e deixou tudo mais difícil por 3 rodadas!";
@@ -298,7 +298,7 @@ function casaSurpresaDois(questionContainer){
 }
 
 function casaSurpresaTres(questionContainer){
-    vidaDoMonstro += 50;
+    vidaDoMonstro += 150;
     if(vidaDoMonstro > vidaInicial){
         vidaDoMonstro = vidaInicial;
     }
@@ -321,7 +321,7 @@ function casaSurpresaQuatro(questionContainer, pontos){
     }, 3000);
 }
 
-function casaSurpresaCinco(questionContainer, problema){
+function casaSurpresaCinco(questionContainer){
     perguntaErrada(1);
     setTimeout(() => {
         questionContainer.remove();
@@ -371,8 +371,9 @@ function perguntaErrada(problema){
         if(pc){
             pc.remove();
             verificadorDePC++;
-        }else{
-            resultado(0);
+            if(pc){
+                resultado(0);
+            }
         }
     }
 }
