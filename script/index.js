@@ -79,7 +79,7 @@ function andarPeao(jogador, valorDoDado){
     novaCasa.appendChild(jogadorAtual);
     pergunta(novaCasa);
     rodadas++;
-    if(rodadas >= 3){
+    if(rodadas >= 4){
         casaSuspresaSeisRetorno();
     }
 }
@@ -349,10 +349,10 @@ function casaSurpresaSeis(questionContainer){
 }
 
 function casaSuspresaSeisRetorno(){
-    document.documentElement.style.setProperty("--casa1", casa1);
-    document.documentElement.style.setProperty("--casa2", casa2);
-    document.documentElement.style.setProperty("--casa3", casa3);
-    document.documentElement.style.setProperty("--casa4", casa4);
+    document.documentElement.style.setProperty("--casa1", "rgb(0, 170, 255)");
+    document.documentElement.style.setProperty("--casa2", "rgb(0, 217, 255)");
+    document.documentElement.style.setProperty("--casa3", "rgb(145, 255, 0)");
+    document.documentElement.style.setProperty("--casa4", "rgb(145, 214, 0)");
 }
 
 function perguntaErrada(problema){
